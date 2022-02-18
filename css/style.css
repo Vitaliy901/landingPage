@@ -1,15 +1,25 @@
 html    {
     font-size: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif, arial, sans-serif ;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 ::selection {
     background-color: black;
     color: white;
     text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
 }
+/* ===================header======================= */
 header {
     min-height: 70vh;
     background-color: #6888b1;
-    font-family: 'Ubuntu', sans-serif, arial, sans-serif ;
     padding: 0 1rem;
 }
 
@@ -29,10 +39,48 @@ header {
     display: flex;
     justify-content: space-between;
 }
-/* .header-nav li:not(.header-nav li:last-child){
-    margin-right: 3.4rem;
-} */
-
+/* ======================= */
+.header-main {
+    margin: 0 auto;
+    max-width: 1174px;
+    padding: 6.7rem 0 0.5rem 0;
+    text-align: center;
+    position: relative;
+}
+.header-main > p {
+    font-size: 1.5rem;
+    margin: 3rem auto 0 auto;
+    font-family: 'Lato', sans-serif;
+    max-width: 27rem;
+}
+.header-main::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/Shape2.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height:11rem;
+    width: 4rem;
+    right: 0;
+    bottom: -4rem;
+}
+/* ======================main=========================== */
+main {
+    position: relative;
+    background-image: url(../img/icon/ShapeSpot.png);
+    background-color: #e0edc1;
+    background-repeat:  no-repeat;
+    background-size: 40%;
+    padding-top: 20rem;
+}
+main > h2 {
+    color: #6888b1;
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
