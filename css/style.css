@@ -10,14 +10,28 @@ header {
     min-height: 70vh;
     background-color: #6888b1;
     font-family: 'Ubuntu', sans-serif, arial, sans-serif ;
+    padding: 0 1rem;
 }
 
 .header-container {
     max-width: 1174px;
-    min-height: inherit;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
+.header-nav {
+    flex: 0 1 24rem;
+    align-self: center;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+/* .header-nav li:not(.header-nav li:last-child){
+    margin-right: 3.4rem;
+} */
 
 
 
