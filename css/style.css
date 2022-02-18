@@ -1,0 +1,77 @@
+html    {
+    font-size: 20px;
+}
+::selection {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px  rgba(24, 209, 255, 0.712);
+}
+header {
+    min-height: 70vh;
+    background-color: #6888b1;
+    font-family: 'Ubuntu', sans-serif, arial, sans-serif ;
+}
+
+.header-container {
+    max-width: 1174px;
+    min-height: inherit;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+
+
+.icon:hover{
+    fill: rgb(220, 20, 30);
+    cursor: pointer;
+    background-color: rgb(52, 43, 175);
+}
+.icon{
+    fill: rgb(241, 241, 241);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(51, 36, 187);
+    border-radius: 50%;
+}
+
+
+
+/* ============================================== */
+@media (min-width: 200px) and (max-width: 600px) {
+    /* Свойства применяются в пределах от меньшего к большему. */
+}
+
+@media (orientation: portrait) {
+    /* Если высота экрана больше ширины, свойство применяется */
+}
+@media (orientation: landscape) {
+    /* Если ширина экрана больше высоты, свойство применяется */
+}
+@import url("main.css") (min-width:481px) and (max-width:768px); 
+/* импортируем содержимое файла css, который предназначается для устройств с 
+разрешением экрана, находящегося в диапозоне от 481 пикселей до 768 пикселей */
+
+
+/*  320px — 480px: мобильные устройства;
+    481px — 768px: планшеты;
+    769px — 1024px: маленькие экраны, ноутбуки;
+    1025px — 1200px: большие экраны;
+    1201px и больше —  очень большие экраны, телевизоры. */
+
+
+    /* для поддержки старых версий браузера Mozilla */
+@-moz-keyframes growElement { 
+	/* ключевые кадры */
+}
+
+/* для поддержки старых версий браузеров Chrome, Opera, Safari */
+@-webkit-keyframes growElement { 
+	/* ключевые кадры */
+}
+/* браузер Internet Explorer. */
+@-ms-keyframes growElement { 
+	/* ключевые кадры */
+}
