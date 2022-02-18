@@ -11,6 +11,9 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+p {
+    font-family: 'Lato', sans-serif;
+}
 ::selection {
     background-color: black;
     color: white;
@@ -50,13 +53,12 @@ header {
 .header-main > p {
     font-size: 1.5rem;
     margin: 3rem auto 0 auto;
-    font-family: 'Lato', sans-serif;
     max-width: 27rem;
 }
 .header-main::after {
     content: "";
     position: absolute;
-    background-image: url(../img/icon/Shape2.png);
+    background-image: url(../img/Shape2.png);
     background-repeat: no-repeat;
     z-index: 1;
     height:11rem;
@@ -67,24 +69,49 @@ header {
 /* ======================main=========================== */
 main {
     position: relative;
-    background-image: url(../img/icon/ShapeSpot.png);
+    background-image: url(../img/ShapeSkew.png), url(../img/ShapeSpot.png);
     background-color: #e0edc1;
     background-repeat:  no-repeat;
-    background-size: 40%;
+    background-position: top -1rem right 4rem, top -25rem right -17rem;
     padding-top: 20rem;
-}
-main > h2 {
-    color: #6888b1;
 }
 .wave {
     position: absolute;
     top: 0;
     left: 0;
 }
+.article-top::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/Shape.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height:5.3rem;
+    width: 9rem;
+    left: 3rem;
+    top: -5rem;
+}
+.article-top {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1174px;
+}
+.article-top > h2 {
+    color: #6888b1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+}
+.article-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
 
 
 
-
+/* =========================bottom ==========================*/
 .icon:hover{
     fill: rgb(220, 20, 30);
     cursor: pointer;
