@@ -11,8 +11,13 @@ h2 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 p {
     font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
 }
 ::selection {
     background-color: black;
@@ -42,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
-/* ======================= */
+/* --------------------------------------------------*/
 .header-main {
     margin: 0 auto;
     max-width: 1174px;
@@ -73,7 +78,7 @@ main {
     background-color: #e0edc1;
     background-repeat:  no-repeat;
     background-position: top -1rem right 4rem, top -25rem right -17rem;
-    padding-top: 20rem;
+    padding: 20rem 1rem 0rem 1rem;
 }
 .wave {
     position: absolute;
@@ -102,11 +107,30 @@ main {
     text-transform: uppercase;
     padding-bottom: 5rem;
 }
+/* ------------------------------------------------ */
 .article-content {
     display: flex;
     justify-content: space-between;
     gap: 0.7rem;
     flex-wrap: wrap;
+    color: #4f4e4e;
+}
+.article-content > section {
+    width: 339px;
+    padding-bottom: 1.6rem;
+    background-color: white;
+}
+.article-content > section span{
+    font-size: 1.5rem;
+}
+.article-content > section img ~*{
+    padding-left: 1rem;
+}
+.article-content  h3 {
+    margin: 0.5rem 0 1.6rem;
+}
+.article-content  p {
+    margin-bottom: 1.6rem;
 }
 
 
