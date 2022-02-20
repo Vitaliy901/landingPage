@@ -82,7 +82,7 @@ main {
     background-color: #e0edc1;
     background-repeat:  no-repeat;
     background-position: top -1rem right 4rem, top -25rem right -17rem, right 2rem top 58rem;
-    padding: 20rem 1rem 0rem 1rem;
+    padding: 20rem 0rem 0rem 0rem;
 }
 
 .wave {
@@ -90,7 +90,7 @@ main {
     top: 0;
     left: 0;
 }
-.article-top::before {
+.popular-menu::before {
     content: "";
     position: absolute;
     background-image: url(../img/Shape.png);
@@ -102,13 +102,13 @@ main {
     top: -5rem;
 }
 
-.article-top {
+.popular-menu {
     position: relative;
     margin: 0 auto;
     max-width: 1174px;
     padding-bottom: 7.5rem;
 }
-.article-top > h2 {
+.popular-menu > h2 {
     color: #6888b1;
     text-align: center;
     text-transform: uppercase;
@@ -117,7 +117,7 @@ main {
 /* ------------------------------------------------ */
 .article-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 0.7rem;
     flex-wrap: wrap;
     color: #4f4e4e;
@@ -165,8 +165,28 @@ main {
     box-shadow: 0 0 15px 4px rgb(90, 90, 90);
     transform: scale(1);
 }
+/* ==========================offers=========================*/
+.offers {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.offers h2 {
+    font-size: 3rem;
+}
+.offers p {
+    font-size: 1.5rem;
+}
+.offers > section {
+    display: flex;
+}
+.offers > section div {
+    flex: 1 1 720px;
+}
+.offers > section img {
+    width: 720px;
+}
 
-/* =========================bottom ==========================*/
+/* =========================footer==========================*/
 .icon:hover{
     fill: rgb(220, 20, 30);
     cursor: pointer;
