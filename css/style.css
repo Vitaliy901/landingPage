@@ -149,7 +149,7 @@ main {
     margin-bottom: 1.6rem;
 }
 /* buttons */
-.show-more, .read-more {
+.show-more, .read-more, .get-voucher {
     display: block;
     background-color: #6888b1;
     color: white;
@@ -163,11 +163,11 @@ main {
 .show-more {
     margin: 5rem auto 0 auto;
 }
-.show-more:hover, .read-more:hover {
+.show-more:hover, .read-more:hover, .get-voucher:hover {
     box-shadow: 0 0 30px 4px rgb(90, 90, 90);
     transform: scale(1.1);
 }
-.show-more:active, .read-more:active {
+.show-more:active, .read-more:active, .get-voucher:active {
     box-shadow: 0 0 15px 4px rgb(90, 90, 90);
     transform: scale(1);
 }
@@ -232,6 +232,18 @@ main {
 .orders {
     margin: 0 auto;
     max-width: 1174px;
+    position: relative;
+}
+.orders::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/WhiteDots3.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height:5.3rem;
+    width: 9rem;
+    left: 0rem;
+    bottom: -2.8rem;
 }
 .orders h2 {
     padding: 5rem 0rem;
@@ -260,7 +272,7 @@ main {
 }
 .orders-container > section div > span {
     position: relative;
-    top: 17%;
+    top: 18%;
     left: 32%;
 }
 .orders-container h3 {
@@ -272,6 +284,43 @@ main {
     text-align: center;
     font-size: 1rem;
     padding-bottom: 6.25rem;
+}
+/* =========================delivery======================== */
+.delivery-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url(../img/vegetables.jpg);
+    display: flex;
+    justify-content: center;
+}
+.delivery-wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/BlueDots.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height:5.3rem;
+    width: 9rem;
+    right: 20rem;
+    bottom: -2.6rem;
+}
+.delivery {
+    flex: 0 1 790px;
+    color: #6888b1;
+    padding: 6.5rem 0 6rem;
+}
+.delivery h2, p {
+    text-align: center;
+}
+.delivery p {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+.delivery > button.get-voucher {
+    display: block;
+    margin: 4.5rem auto 0 auto;
+    font-size: 1.5rem;
+    padding: 1.5rem 4.5rem;
 }
 /* =========================footer==========================*/
 .icon:hover{
