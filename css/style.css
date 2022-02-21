@@ -242,13 +242,17 @@ main {
 .orders-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.orders-container section {
+    flex: 0 1 380px;
 }
 .orders-container > section div {
     font-size: 2.5rem;
     font-weight: bold;
     color: #6888b1;
     background-color: white;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem auto;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -259,7 +263,16 @@ main {
     top: 17%;
     left: 32%;
 }
-
+.orders-container h3 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.orders-container p {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 6.25rem;
+}
 /* =========================footer==========================*/
 .icon:hover{
     fill: rgb(220, 20, 30);
