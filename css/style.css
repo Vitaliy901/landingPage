@@ -124,7 +124,7 @@ main {
     color: #4f4e4e;
 }
 .article-content > section {
-    width: 339px;
+    flex: 0 1;
     padding-bottom: 1.6rem;
     background-color: white;
     transition: 1s;
@@ -138,6 +138,9 @@ main {
 }
 .article-content > section img ~*{
     padding-left: 1rem;
+}
+.article-content > section img {
+    height: 301px;
 }
 .article-content  h3 {
     margin: 0.5rem 0 1.6rem;
@@ -238,6 +241,7 @@ main {
 }
 .orders-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .orders-container > section div {
     font-size: 2.5rem;
@@ -250,9 +254,12 @@ main {
     border-radius: 50%;
     position: relative;
 }
-.orders-container > section div::before {
-    
+.orders-container > section div > span {
+    position: relative;
+    top: 17%;
+    left: 32%;
 }
+
 /* =========================footer==========================*/
 .icon:hover{
     fill: rgb(220, 20, 30);
