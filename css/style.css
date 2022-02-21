@@ -223,7 +223,36 @@ main {
     background-color: rgb(255, 253, 231);
 }
 /* =======================how to ordered =======================*/
-
+.orders-wrapper {
+    background-color: #6888b1;
+}
+.orders {
+    margin: 0 auto;
+    max-width: 1174px;
+}
+.orders h2 {
+    padding: 5rem 0rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5rem;
+}
+.orders-container {
+    display: flex;
+}
+.orders-container > section div {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6888b1;
+    background-color: white;
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+}
+.orders-container > section div::before {
+    
+}
 /* =========================footer==========================*/
 .icon:hover{
     fill: rgb(220, 20, 30);
