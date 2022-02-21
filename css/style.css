@@ -79,10 +79,11 @@ header {
 /* ======================main=========================== */
 main {
     position: relative;
-    background-image: url(../img/ShapeSkew.png), url(../img/ShapeSpot.png), url(../img/BlueDots.png);
+    background-image: url(../img/ShapeSkew.png), url(../img/ShapeSpot.png), url(../img/BlueDots.png), 
+    url(../img/shape-skew-bottom.png), url(../img/Shape-spot-bottom.png);
     background-color: #e0edc1;
     background-repeat:  no-repeat;
-    background-position: top -1rem right 4rem, top -25rem right -17rem, right 2rem top 58rem;
+    background-position: top -1rem right 4rem, top -25rem right -17rem, right 2rem top 58rem, bottom 1rem left 7rem, bottom -22rem left -15rem;
     padding: 20rem 0rem 0rem 0rem;
 }
 
@@ -292,6 +293,7 @@ main {
     background-image: url(../img/vegetables.jpg);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .delivery-wrapper::after {
     content: "";
@@ -301,7 +303,7 @@ main {
     z-index: 1;
     height:5.3rem;
     width: 9rem;
-    right: 20rem;
+    right: 7.5rem;
     bottom: -2.6rem;
 }
 .delivery {
@@ -323,21 +325,85 @@ main {
     padding: 1.5rem 4.5rem;
 }
 /* =========================quote========================== */
-
-/* =========================footer==========================*/
-.icon:hover{
-    fill: rgb(220, 20, 30);
-    cursor: pointer;
-    background-color: rgb(52, 43, 175);
+main .bottom-wave {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-.icon{
-    fill: rgb(241, 241, 241);
+.quote::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/BlueDots.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    height:5.3rem;
+    width: 9rem;
+    left: 2rem;
+    bottom: 10rem;
+}
+.quote {
+    max-width: 1174px;
+    margin: 0 auto;
+    color: #6888b1;
+    padding: 10rem 0 17rem;
+    position: relative;
+    z-index: 1;
+}
+.quote::before {
+    content: "";
+    background-image: url(../img/Quote.png);
+    position: absolute;
+    top: 5.5rem;
+    left: 47.7%;
+    width: 56px;
+    height: 45px;
+}
+.quote p {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+.quote h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.quote ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+}
+/*  community */
+.quote > address a {
+    display: block;
+    padding: 0.5rem;
+    box-sizing: border-box;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(51, 36, 187);
     border-radius: 50%;
+    background-color:#6888b1;
+    width: 3rem;
+    height: 3rem;
+    transition: 0.3s;
 }
+#facebook, #twitter, #instagram{
+    fill: #e0edc1;
+    transition: 0.3s;
+}
+.facebook:hover, .twitter:hover, .instagram:hover {
+    transform: scale(1.05);
+}
+.facebook:hover > #facebook{
+    fill: #ffffff;
+}
+.twitter:hover > #twitter{
+    fill: #ffffff;
+}
+.instagram:hover > #instagram{
+    fill: #ffffff;
+}
+/* =========================footer==========================*/
+
 
 
 
