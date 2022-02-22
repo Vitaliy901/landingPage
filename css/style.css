@@ -218,6 +218,7 @@ main {
 }
 .offers > section {
     display: flex;
+    justify-content: center;
 }
 .offers > section div {
     flex: 0 1 720px;
@@ -300,6 +301,7 @@ main {
     margin: 0 auto;
     max-width: 1440px;
     background-image: url(../img/vegetables.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     position: relative;
@@ -465,8 +467,34 @@ footer {
 }
 
 /* ============================================== */
-@media (min-width: 200px) and (max-width: 600px) {
-    /* Свойства применяются в пределах от меньшего к большему. */
+@media  (max-width: 1440px) {
+    /*============== offers=============== */
+    .offers > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offers > section div {
+        flex: 0 1 0px;
+        height: 780px;
+    }
+    .offers > section img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .offers > section:last-child > div:first-child {
+        padding: 10rem 0 1rem 2.5rem;
+        order: 1;
+    }
+    .offers::before {
+       display: none;
+    }
+    .offers button {
+        margin: 0 auto;
+    }
+    .discount-container {
+        padding: 10rem 0 1rem 2.5rem;
+    }
 }
 
 @media (orientation: portrait) {
