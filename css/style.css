@@ -220,10 +220,12 @@ main {
     display: flex;
 }
 .offers > section div {
-    flex: 1 1 720px;
+    flex: 0 1 720px;
 }
 .offers > section img {
     width: 720px;
+    height: 100%;
+    object-fit: cover;
 }
 .discount-container {
     padding: 10rem 0 0 2.5rem;
