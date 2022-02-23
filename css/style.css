@@ -545,6 +545,22 @@ footer {
     .discount-container {
         padding: 10rem 0 1rem 2.5rem;
     }
+    /* header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .header-nav {
+        flex: 0 1;
+        width: 100vw;
+        align-self: center;
+        font-size: 1.25rem;
+        margin-left: 0rem;
+    }
+    .header-nav ul {
+        justify-content: space-around;
+    }
 }
 @media (orientation: portrait) {
     /* Если высота экрана больше ширины, свойство применяется */
