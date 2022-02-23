@@ -1,9 +1,11 @@
 let toTop = document.querySelector('#toTop');
 let footer = document.querySelector('.footer-wrapper')
 let menu = document.querySelector('.popular-menu')
-let sections= document.querySelector('.article-content').children
-console.log(sections)
-
+let sections = document.querySelector('.article-content').children
+let headerChildren= document.querySelector('.header-main').children
+for (const elem of headerChildren) {
+   setTimeout(() =>  elem.classList.add('_active-header'), 1000)
+}
 window.addEventListener('scroll', function (params) {
     let size = footer.offsetTop - window.screen.height
     let i = 550;
@@ -24,4 +26,3 @@ window.addEventListener('scroll', function (params) {
 toTop.addEventListener('click', function (params) {
     scroll({top: 0, behavior: 'smooth'})
 })
-

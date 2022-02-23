@@ -66,7 +66,18 @@ header {
     padding: 6.7rem 0 0.5rem 0;
     text-align: center;
     position: relative;
+    z-index: 1;
 }
+ .header-main > h1,  .header-main > p{
+    transform: translate(0,15rem);
+    opacity: 0;
+    transition: 1s;
+}
+.header-main > h1._active-header, .header-main >p._active-header{
+    transform: translate(0,0rem);
+    opacity: 1;
+}
+
 .header-main > p {
     font-size: 1.5rem;
     margin: 3rem auto 0 auto;
@@ -82,6 +93,20 @@ header {
     width: 4rem;
     right: 0;
     bottom: -4rem;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+@keyframes move {
+    from {
+        opacity: 0;
+        right: -400px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
 }
 /* ======================main=========================== */
 main {
@@ -332,7 +357,7 @@ main {
     color: #6888b1;
     padding: 6.5rem 0 6rem;
 }
-.delivery h2, p {
+.delivery h2, .delivery p {
     text-align: center;
 }
 .delivery p {
