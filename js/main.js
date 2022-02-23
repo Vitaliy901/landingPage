@@ -7,7 +7,7 @@ for (const elem of headerChildren) {
    setTimeout(() =>  elem.classList.add('_active-header'), 1000)
 }
 window.addEventListener('scroll', function (params) {
-    let size = footer.offsetTop - window.screen.height
+    let size = footer.offsetTop - window.innerHeight
     let i = 550;
    if (window.scrollY >= menu.offsetTop - 200) {
     for (const section of sections) {
