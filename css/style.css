@@ -123,7 +123,8 @@ main {
     text-transform: uppercase;
     padding-bottom: 5rem;
 }
-/* --------------------Menu---------------------------- */
+
+/*==========================Menu======================*/
 .article-content {
     display: flex;
     justify-content: space-around;
@@ -135,10 +136,19 @@ main {
     flex: 0 1;
     padding-bottom: 1.6rem;
     background-color: white;
-    transition: 1s;
+    transform: scale(1.05) translate(-1600px,0);
+    box-shadow: 0 0 40px 10px rgb(0, 0, 0);
+    opacity: 0;
+    transition: transform 0.7s linear, opacity 0.7s linear, box-shadow 0.7s linear 0.2s;
+}
+.article-content > section._active-menu {
+    transform: scale(1) translate(0,0);
+    box-shadow: 0 0 0 0px rgb(90, 90, 90);
+    opacity: 1;
 }
 .article-content > section:hover {
     box-shadow: 0 0 15px 4px rgb(90, 90, 90);
+    transition: transform 0.2s linear, box-shadow 0.2s linear 0s;
     transform: scale(1.05);
 }
 .article-content > section span{
@@ -423,6 +433,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 1rem;
+    position: relative;
 }
 .footer-nav {
     display: flex;
@@ -433,7 +444,7 @@ footer {
 .footer-wrapper > div p {
     text-align: start;
 }
-.footer-wrapper > div:first-child {
+.footer-wrapper > button + div {
     flex: 0 1 540px;
 }
 .footer-wrapper h3 {
@@ -465,7 +476,30 @@ footer {
 .cc a {
     padding-left: 0.2rem;
 }
-
+/* button to top */
+#toTop {
+    position: absolute;
+    right: 2rem;
+    top: -7rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    z-index: 1;
+    background: url(../img/icon/up-arrow-svgrepo-com.svg) no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border: 1px solid #ffffff;
+    transition: 1s;
+    transform: translate(0,18rem);
+    opacity: 0;
+}
+#toTop:hover {
+    background-color: #e0edc1;
+}
+#toTop._active-button {
+    transform: translate(0,0);
+    opacity: 1;
+}
 /* ============================================== */
 @media  (max-width: 1440px) {
     /*============== offers=============== */
