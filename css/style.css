@@ -481,6 +481,13 @@ footer {
 }
 .footer-wrapper a {
     text-decoration: none;
+	color: #1d1d1d;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	transition: 1s;
+}
+.footer-wrapper a:hover {
+	color: #ffffff;
+	border-bottom: 2px solid black;
 }
 .footer-nav  ul li {
     padding-bottom: 0.5rem;
